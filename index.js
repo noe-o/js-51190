@@ -1,3 +1,4 @@
+let suma = 0;
 function compra() {
   let grupo = prompt(
     'Elige uno de los productos de la lista: \n 1. Aceites de oliva virgen extra \n 2.Cosmética \n 3.Aceitunas sin carozo'
@@ -8,19 +9,19 @@ function compra() {
     );
     switch (prod1) {
       case '1':
-        return (suma = 800);
+        suma = 800;
         break;
       case '2':
-        return (suma = 1500);
+        suma = 1500;
         break;
       case '3':
-        return (suma = 2700);
+        suma = 2700;
         break;
       case '4':
         return (suma = 4800);
         break;
       case '5':
-        return (suma = 9400);
+        suma = 9400;
         break;
       default:
         console.log('el dato ingresado es incorrecto');
@@ -31,16 +32,16 @@ function compra() {
     );
     switch (prod2) {
       case '1':
-        return (suma = 700);
+        suma = 700;
         break;
       case '2':
-        return (suma = 1900);
+        suma = 1900;
         break;
       case '3':
-        return (suma = 2000);
+        suma = 2000;
         break;
       case '4':
-        return (suma = 4100);
+        suma = 4100;
         break;
       default:
         console.log('el dato ingresado es incorrecto');
@@ -49,26 +50,29 @@ function compra() {
     let prod3 = prompt('Elige: 1. Aceituna negra 2.Aceituna verde');
     switch (prod3) {
       case '1':
-        return (suma = 1900);
+        suma = 1900;
         break;
       case '2':
-        return (suma = 1900);
+        suma = 1900;
         break;
     }
   } else alert('No se puso procesar tu respuesta');
+  cconsole.log(suma);
 }
-
-let valor=true;
-while (valor){
+let total=0;
+let valor = true;
+while (valor) {
   let quiere = prompt(
     '¿Quiere comprar algún producto de la finca? Responder: sí/no'
   );
   quiere = quiere.toLowerCase();
-  
+
   if (quiere == 'si' || quiere == 'sí') {
-    compra()
-    } else if (quiere == 'no') {
-      alert('Puede continuar navegando por nuestra página web');
-      valor=false;
-    } else alert('No se pudo procesar tu respuesta');  
+    compra();
+  } else if (quiere == 'no') {
+    alert('Puede continuar navegando por nuestra página web');
+    valor = false;
+  } else alert('No se pudo procesar tu respuesta');
+  let total=total+suma;
 }
+console.log(total);

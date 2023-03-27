@@ -57,7 +57,7 @@ function compra() {
         break;
     }
   } else alert('No se puso procesar tu respuesta');
-  cconsole.log(suma);
+  console.log(suma);
 }
 let total=0;
 let valor = true;
@@ -73,6 +73,6 @@ while (valor) {
     alert('Puede continuar navegando por nuestra página web');
     valor = false;
   } else alert('No se pudo procesar tu respuesta');
-  let total=total+suma;
+  total=total+suma;
 }
 console.log(total);

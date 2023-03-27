@@ -18,7 +18,7 @@ function compra() {
         suma = 2700;
         break;
       case '4':
-        return (suma = 4800);
+        suma = 4800;
         break;
       case '5':
         suma = 9400;
@@ -59,7 +59,7 @@ function compra() {
   } else alert('No se puso procesar tu respuesta');
   console.log(suma);
 }
-let total=0;
+let total = 0;
 let valor = true;
 while (valor) {
   let quiere = prompt(
@@ -69,10 +69,10 @@ while (valor) {
 
   if (quiere == 'si' || quiere == 'sí') {
     compra();
+    total = total + suma;
+    alert('El total de su compra es de $' + total);
   } else if (quiere == 'no') {
     alert('Puede continuar navegando por nuestra página web');
     valor = false;
-  } else alert('No se pudo procesar tu respuesta');
-  total=total+suma;
+  } else alert('Responder: sí/no');
 }
-console.log(total);

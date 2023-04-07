@@ -1,10 +1,10 @@
 let suma = 0;
 let total = 0;
 compraAceite = () => {
-  let prod1 = prompt(
+  let prod = prompt(
     'Elige: \n 1.AOVE 250ml \n 2. AOVE 500ml \n 3.AOVE 1lt \n 4.AOVE 2lt \n 5.AOVE 5lt'
   );
-  switch (prod1) {
+  switch (prod) {
     case '1':
       suma = 800;
       break;
@@ -25,10 +25,10 @@ compraAceite = () => {
   }
 };
 compraCosmetica = () => {
-  let prod2 = prompt(
+  let prod = prompt(
     'Elige: 1.Jabón de aceite de olive 2.Jabón x 3 3.Jabonera rústica 4.Combo: 4 jabones + jabonera'
   );
-  switch (prod2) {
+  switch (prod) {
     case '1':
       suma = 700;
       break;
@@ -46,8 +46,8 @@ compraCosmetica = () => {
   }
 };
 compraAceituna = () => {
-  let prod3 = prompt('Elige: 1. Aceituna negra 2.Aceituna verde');
-  switch (prod3) {
+  let prod = prompt('Elige: 1. Aceituna negra 2.Aceituna verde');
+  switch (prod) {
     case '1':
       suma = 1900;
       break;
@@ -76,7 +76,12 @@ compra = () => {
       console.log('el dato ingresado es incorrecto');
   }
   console.log(suma);
-}
+  const productos = [];
+  productos.push({
+    prod,
+  });
+  console.log(productos);
+};
 
 let valor = true;
 while (valor) {
@@ -94,3 +99,8 @@ while (valor) {
     valor = false;
   } else alert('Responder: sí/no');
 }
+
+ticket = () => {
+  const nombre = prompt('Ingrese su nombre');
+  const celular = prompt('Ingrese su número de teléfono');
+};

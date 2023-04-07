@@ -50,9 +50,11 @@ compraAceituna = () => {
   switch (prod) {
     case '1':
       suma = 1900;
+      prod = 'Aceituna negra';
       break;
     case '2':
       suma = 1900;
+      prod = 'Aceituna verde';
       break;
     default:
       console.log('el dato ingresado es incorrecto');
@@ -76,10 +78,7 @@ compra = () => {
       console.log('el dato ingresado es incorrecto');
   }
   console.log(suma);
-  const productos = [];
-  productos.push({
-    prod,
-  });
+  const productos = [prod];
   console.log(productos);
 };
 

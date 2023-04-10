@@ -46,8 +46,8 @@ compraCosmetica = () => {
   }
 };
 compraAceituna = () => {
-  let prod = prompt('Elige: 1. Aceituna negra 2.Aceituna verde');
-  switch (prod) {
+  let elije = prompt('Elige: 1. Aceituna negra 2.Aceituna verde');
+  switch (elije) {
     case '1':
       suma = 1900;
       prod = 'Aceituna negra';

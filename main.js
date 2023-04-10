@@ -78,8 +78,9 @@ compra = () => {
       console.log('el dato ingresado es incorrecto');
   }
   console.log(suma);
+  carrito = { prod };
   const productos = [];
-  productos.push(prod);
+  productos.push(carrito);
   console.log(productos);
 };
 

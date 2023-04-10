@@ -79,7 +79,7 @@ compra = () => {
   }
   console.log(suma);
   let productos = [];
-  productos.push = {sprod};
+  productos.push = { prod };
   console.log(productos);
 };
 

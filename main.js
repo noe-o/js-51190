@@ -89,7 +89,7 @@ while (valor) {
   let quiere = prompt(
     '¿Quiere comprar algún producto de la finca? Responder: sí/no'
   );
-  quiere = quiere.toLowerCase();
+  quiere.toLowerCase();
 
   if (quiere == 'si' || quiere == 'sí') {
     compra();

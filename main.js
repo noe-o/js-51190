@@ -79,7 +79,7 @@ compra = () => {
   }
   console.log(suma);
   let productos = [];
-  productos.push = prod;
+  productos.push = {sprod};
   console.log(productos);
 };
 
@@ -99,8 +99,9 @@ while (valor) {
     valor = false;
   } else alert('Responder: sí/no');
 }
-
+/*
 ticket = () => {
   const nombre = prompt('Ingrese su nombre');
   const celular = prompt('Ingrese su número de teléfono');
 };
+*/

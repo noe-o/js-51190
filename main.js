@@ -1,29 +1,29 @@
 let suma = 0;
 let total = 0;
 compraAceite = () => {
-  let prod = prompt(
+  let elije = prompt(
     'Elige: \n 1.AOVE 250ml \n 2. AOVE 500ml \n 3.AOVE 1lt \n 4.AOVE 2lt \n 5.AOVE 5lt'
   );
-  switch (prod) {
+  switch (elije) {
     case '1':
       suma = 800;
-      prod = prod + 'AOVE 250ml';
+      prod = 'AOVE 250ml';
       break;
     case '2':
       suma = 1500;
-      prod = prod + 'AOVE 500ml';
+      prod = 'AOVE 500ml';
       break;
     case '3':
       suma = 2700;
-      prod = prod + 'AOVE 1lt';
+      prod = 'AOVE 1lt';
       break;
     case '4':
       suma = 4800;
-      prod = prod + 'AOVE 2lt';
+      prod = 'AOVE 2lt';
       break;
     case '5':
       suma = 9400;
-      prod = prod + 'AOVE 5lt';
+      prod = 'AOVE 5lt';
       break;
     default:
       console.log('el dato ingresado es incorrecto');
@@ -36,19 +36,19 @@ compraCosmetica = () => {
   switch (elije) {
     case '1':
       suma = 700;
-      prod = prod + ' Jabón de aceite de oliva';
+      prod = 'Jabón de aceite de oliva';
       break;
     case '2':
       suma = 1900;
-      prod = prod + ' Jabón x3';
+      prod = 'Jabón x3';
       break;
     case '3':
       suma = 2000;
-      prod = prod + ' Jabonera rústica';
+      prod = 'Jabonera rústica';
       break;
     case '4':
       suma = 4100;
-      prod = prod + ' Combo: 4 jabones + jabonera';
+      prod = 'Combo: 4 jabones + jabonera';
       break;
     default:
       console.log('el dato ingresado es incorrecto');
@@ -59,11 +59,11 @@ compraAceituna = () => {
   switch (elije) {
     case '1':
       suma = 1900;
-      prod = prod + ' Aceituna negra';
+      prod = 'Aceituna negra';
       break;
     case '2':
       suma = 1900;
-      prod = ' Aceituna verde';
+      prod = 'Aceituna verde';
       break;
     default:
       console.log('el dato ingresado es incorrecto');
@@ -86,11 +86,29 @@ compra = () => {
     default:
       console.log('el dato ingresado es incorrecto');
   }
-  console.log(suma);
+  const productos = [];
+  productos.push(prod);
+  console.log(productos);
+  class ticket {
+    constructor(nombre, celular, productos) {
+      (this.nombre = prompt('Ingrese su nombre')),
+        (this.celular = prompt('Ingrese su número de teléfono')),
+        this.productos;
+    }
+  }
+
+  const tickets = [
+    {
+      nombre: 'Norma',
+      celular: '234667788',
+      productos: 'noquieroaceite',
+    },
+  ];
+  tickets.push(ticket);
+  alert(tickets);
 };
 
-let valor = true;
-while (valor) {
+do {
   let quiere = prompt(
     '¿Quiere comprar algún producto de la finca? Responder: sí/no'
   );
@@ -100,19 +118,9 @@ while (valor) {
     compra();
     total = total + suma;
     alert('El total de su compra es de $' + total);
+    continuar = confirm('¿Quiere comprar otro producto de la finca?');
   } else if (quiere == 'no') {
     alert('Puede continuar navegando por nuestra página web');
-    valor = false;
-  } else alert('Responder: sí/no');
-}
-/*
-ticket {
-  const nombre = prompt('Ingrese su nombre');
-  const celular = prompt('Ingrese su número de teléfono');
-  const productos = prod;
-
-};
-
-const tickets[];
-tickets.push(ticket)
-*/
+    continuar = false;
+  }
+} while (continuar);

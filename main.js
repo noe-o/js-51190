@@ -41,7 +41,7 @@ compraAceite = () => {
       })
       break;
     default:
-      console.log('el dato ingresado es incorrecto');
+      alert('El dato ingresado es incorrecto');
   }
 };
 compraCosmetica = () => {
@@ -78,7 +78,7 @@ compraCosmetica = () => {
     })
       break;
     default:
-      console.log('el dato ingresado es incorrecto');
+      alert('El dato ingresado es incorrecto');
   }
 };
 compraAceituna = () => {
@@ -99,7 +99,7 @@ compraAceituna = () => {
     })
       break;
     default:
-      console.log('el dato ingresado es incorrecto');
+      alert('El dato ingresado es incorrecto');
   }
 };
 compra = () => {

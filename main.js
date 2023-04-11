@@ -1,29 +1,44 @@
-let suma = 0;
-let total = 0;
+const carrito = []
+
 compraAceite = () => {
   let elije = prompt(
     'Elige: \n 1.AOVE 250ml \n 2. AOVE 500ml \n 3.AOVE 1lt \n 4.AOVE 2lt \n 5.AOVE 5lt'
   );
   switch (elije) {
     case '1':
-      suma = 800;
-      prod = 'AOVE 250ml';
+      carrito.push({
+        valor = 800,
+        producto = 'AOVE 250ml',
+        categoría = 'Aceite'
+      })
       break;
     case '2':
-      suma = 1500;
-      prod = 'AOVE 500ml';
+      carrito.push({
+        valor = 1500,
+        producto = 'AOVE 500ml',
+        categoría = 'Aceite'
+      })
       break;
     case '3':
-      suma = 2700;
-      prod = 'AOVE 1lt';
+      carrito.push({
+        valor = 2700,
+        producto = 'AOVE 1lt',
+        categoría = 'Aceite'
+      })
       break;
     case '4':
-      suma = 4800;
-      prod = 'AOVE 2lt';
+      carrito.push({
+        valor = 4800,
+        producto = 'AOVE 2lt',
+        categoría = 'Aceite'
+      })
       break;
     case '5':
-      suma = 9400;
-      prod = 'AOVE 5lt';
+      carrito.push({
+        valor = 9400,
+        producto = 'AOVE 5lt',
+        categoría = 'Aceite'
+      })
       break;
     default:
       console.log('el dato ingresado es incorrecto');
@@ -35,20 +50,32 @@ compraCosmetica = () => {
   );
   switch (elije) {
     case '1':
-      suma = 700;
-      prod = 'Jabón de aceite de oliva';
+    carrito.push({
+      valor = 700,
+      producto = 'Jabón de aceite de oliva',
+      categoría = 'Cosmética'
+    })
       break;
     case '2':
-      suma = 1900;
-      prod = 'Jabón x3';
+    carrito.push({
+      valor = 1900,
+      producto = 'Jabón x3',
+      categoría = 'Cosmética'
+    })
       break;
     case '3':
-      suma = 2000;
-      prod = 'Jabonera rústica';
+    carrito.push({
+      valor = 2000,
+      producto = 'Jabonera rústica',
+      categoría = 'Cosmética'
+    })
       break;
     case '4':
-      suma = 4100;
-      prod = 'Combo: 4 jabones + jabonera';
+    carrito.push({
+      valor = 4100,
+      producto = 'Combo: 4 jabones + jabonera',
+      categoría = 'Cosmética'
+    })
       break;
     default:
       console.log('el dato ingresado es incorrecto');
@@ -58,12 +85,18 @@ compraAceituna = () => {
   let elije = prompt('Elige: 1. Aceituna negra 2.Aceituna verde');
   switch (elije) {
     case '1':
-      suma = 1900;
-      prod = 'Aceituna negra';
+    carrito.push({
+      valor = 1900,
+      producto = 'Aceituna negra',
+      categoría = 'Aceituna'
+    })
       break;
     case '2':
-      suma = 1900;
-      prod = 'Aceituna verde';
+    carrito.push({
+      valor = 1900,
+      producto = 'Aceituna verde',
+      categoría = 'Aceituna'
+    })
       break;
     default:
       console.log('el dato ingresado es incorrecto');
@@ -86,27 +119,8 @@ compra = () => {
     default:
       console.log('el dato ingresado es incorrecto');
   }
-  const productos = [];
-  productos.push(prod);
-  console.log(productos);
-  class ticket {
-    constructor(nombre, celular, productos) {
-      (this.nombre = prompt('Ingrese su nombre')),
-        (this.celular = prompt('Ingrese su número de teléfono')),
-        this.productos;
-    }
-  }
 
-  const tickets = [
-    {
-      nombre: 'Norma',
-      celular: '234667788',
-      productos: 'noquieroaceite',
-    },
-  ];
-  tickets.push(ticket);
-  alert(tickets);
-};
+}
 
 do {
   let quiere = prompt(

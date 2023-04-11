@@ -2,7 +2,7 @@ const carrito = [];
 let total = 0;
 const compraAceite = () => {
   let elije = prompt(
-    'Elige: \n 1.AOVE 250ml \n 2. AOVE 500ml \n 3.AOVE 1lt \n 4.AOVE 2lt \n 5.AOVE 5lt'
+    'Elige uno de los productos: \n 1.AOVE 250ml \n 2. AOVE 500ml \n 3.AOVE 1lt \n 4.AOVE 2lt \n 5.AOVE 5lt'
   );
   switch (elije) {
     case '1':
@@ -46,7 +46,7 @@ const compraAceite = () => {
 };
 const compraCosmetica = () => {
   let elije = prompt(
-    'Elige: 1.Jabón de aceite de oliva 2.Jabón x3 3.Jabonera rústica 4.Combo: 4 jabones + jabonera'
+    'Elige uno de los productos: 1.Jabón de aceite de oliva 2.Jabón x3 3.Jabonera rústica 4.Combo: 4 jabones + jabonera'
   );
   switch (elije) {
     case '1':
@@ -82,7 +82,7 @@ const compraCosmetica = () => {
   }
 };
 const compraAceituna = () => {
-  let elije = prompt('Elige: 1. Aceituna negra 2.Aceituna verde');
+  let elije = prompt('Elige uno de los productos: 1. Aceituna negra 2.Aceituna verde');
   switch (elije) {
     case '1':
       carrito.push({
@@ -104,7 +104,7 @@ const compraAceituna = () => {
 };
 const compra = () => {
   let grupo = prompt(
-    'Elige uno de los productos de la lista: \n 1. Aceites de oliva virgen extra \n 2.Cosmética \n 3.Aceitunas sin carozo'
+    'Elige una de las categorias: \n 1. Aceites de oliva virgen extra \n 2.Cosmética \n 3.Aceitunas sin carozo'
   );
   switch (grupo) {
     case '1':
@@ -131,9 +131,21 @@ const total = () => {
   total = carrito.reduce((total, producto) => total + producto.valor, 0)
   alert('El total a pagar es: $' + total);
 }
+/*
 const borrarProducto = () => {
-  
+  let borrar = confirm('¿Quiere borrar algún producto de su carrito de compras?');
+  while(borrar){
+    const cate = prompt('Ingrese la categoría del producto que desea eliminar: \n 1.Aceites \n 2.Cosmética \n 3.Aceitunas');
+    switch (cate){
+      case '1':
+      const produ = ('Ingrese el producto que desea eliminar: \n 1.AOVE 250ml \n 2. AOVE 500ml \n 3.AOVE 1lt \n 4.AOVE 2lt \n 5.AOVE 5lt')
+
+    }
+
+  }
+
 }
+*/
 const inicializar = () => {
   let continuar = confirm('¿Quiere comprar algún producto de la finca?');
   while (continuar) {

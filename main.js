@@ -122,19 +122,9 @@ compra = () => {
 
 }
 
-do {
-  let quiere = prompt(
-    '¿Quiere comprar algún producto de la finca? Responder: sí/no'
-  );
-  quiere.toLowerCase();
-
-  if (quiere == 'si' || quiere == 'sí') {
-    compra();
-    total = total + suma;
-    alert('El total de su compra es de $' + total);
-    continuar = confirm('¿Quiere comprar otro producto de la finca?');
-  } else if (quiere == 'no') {
-    alert('Puede continuar navegando por nuestra página web');
-    continuar = false;
-  }
-} while (continuar);
+let continuar = confirm('¿Quiere comprar algún producto de la finca?');
+while(continuar){
+  compra();
+  continuar = confirm('¿Quiere comprar otro producto de la finca?');
+}
+alert('Gracias por visitar Finca Oliva Olivos');

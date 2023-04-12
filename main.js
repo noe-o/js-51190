@@ -143,7 +143,9 @@ const inicializar = () => {
     continuar = confirm('¿Quiere comprar otro producto de la finca?');
   }
 }
-inicializar();
-verCarrito();
-total();
+compra();
+console.log(carrito);
+//inicializar();
+//verCarrito();
+//total();
 alert('Gracias por visitar Finca Oliva Olivos');

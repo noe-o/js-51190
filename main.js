@@ -1,12 +1,11 @@
 const carrito = []; //en este array voy a guardar objetos
 let total = 0; //este total lo uo en la función compra
-let valor = 0;
 //las funciones compraAceite, compraCosmetica y compraAceituna son diferentes categorías y dentro de ellas están los productos que el cliente puede elegir
 const compraAceite = () => {
-  let elije = prompt(
+  let elige = prompt(
     'Elige uno de los productos: \n 1.AOVE 250ml \n 2. AOVE 500ml \n 3.AOVE 1lt \n 4.AOVE 2lt \n 5.AOVE 5lt'
   );
-  switch (elije) {
+  switch (elige) {
     case '1':
       carrito.push({
         valor = 800,
@@ -47,10 +46,10 @@ const compraAceite = () => {
   }
 };
 const compraCosmetica = () => {
-  let elije = prompt(
+  let elige = prompt(
     'Elige uno de los productos: 1.Jabón de aceite de oliva 2.Jabón x3 3.Jabonera rústica 4.Combo: 4 jabones + jabonera'
   );
-  switch (elije) {
+  switch (elige) {
     case '1':
       carrito.push({
         valor = 700,
@@ -84,8 +83,8 @@ const compraCosmetica = () => {
   }
 };
 const compraAceituna = () => {
-  let elije = prompt('Elige uno de los productos: 1. Aceituna negra 2.Aceituna verde');
-  switch (elije) {
+  let elige = prompt('Elige uno de los productos: 1. Aceituna negra 2.Aceituna verde');
+  switch (elige) {
     case '1':
       carrito.push({
         valor = 1900,
@@ -124,17 +123,17 @@ const compra = () => {
   }
 };
 //la función verCarrito sirve para que el cliente vea lo que eligió
-const verCarrito = () => {
+/*const verCarrito = () => {
   carrito.forEach((producto) => {
     alert('Producto: ' + producto.nombre + ' Precio: $' + producto.valor + ' Categoría: ' + producto.categoria);
 
   })
-}
+}*/
 //la función total calcula el total a pagar
-const total = () => {
+/*const total = () => {
   total = carrito.reduce((total, producto) => total + producto.valor, 0)
   alert('El total a pagar es: $' + total);
-}
+}*/
 //la función inicializar se repite si el cliente quiere compra mas de un producto
 const inicializar = () => {
   let continuar = confirm('¿Quiere comprar algún producto de la finca?');

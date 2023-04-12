@@ -134,14 +134,15 @@ const total = () => {
   total = carrito.reduce((total, producto) => total + producto.valor, 0)
   alert('El total a pagar es: $' + total);
 }
-//la función inicializar engloba las funciones anteriores y se repite si el cliente quiere compra mas de un producto
+//la función inicializar se repite si el cliente quiere compra mas de un producto
 const inicializar = () => {
   let continuar = confirm('¿Quiere comprar algún producto de la finca?');
   while (continuar) {
     compra();
-    verCarrito();
-    total();
     continuar = confirm('¿Quiere comprar otro producto de la finca?');
   }
 }
+inicializar();
+verCarrito();
+total();
 alert('Gracias por visitar Finca Oliva Olivos');

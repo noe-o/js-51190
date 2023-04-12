@@ -1,5 +1,6 @@
 const carrito = []; //en este array voy a guardar objetos
 let total = 0; //este total lo uo en la función compra
+let valor = 0;
 //las funciones compraAceite, compraCosmetica y compraAceituna son diferentes categorías y dentro de ellas están los productos que el cliente puede elegir
 const compraAceite = () => {
   let elije = prompt(

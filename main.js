@@ -1,5 +1,6 @@
-const carrito = [];
-let total = 0;
+const carrito = []; //en este array voy a guardar objetos
+let total = 0; //este total lo uo en la función compra
+//las funciones compraAceite, compraCosmetica y compraAceituna son diferentes categorías y dentro de ellas están los productos que el cliente puede elegir
 const compraAceite = () => {
   let elije = prompt(
     'Elige uno de los productos: \n 1.AOVE 250ml \n 2. AOVE 500ml \n 3.AOVE 1lt \n 4.AOVE 2lt \n 5.AOVE 5lt'
@@ -102,6 +103,7 @@ const compraAceituna = () => {
       alert('El dato ingresado es incorrecto');
   }
 };
+//en la función compra llamaré a las funciones anteriores
 const compra = () => {
   let grupo = prompt(
     'Elige una de las categorias: \n 1. Aceites de oliva virgen extra \n 2.Cosmética \n 3.Aceitunas sin carozo'
@@ -117,35 +119,22 @@ const compra = () => {
       compraAceituna();
       break;
     default:
-      console.log('el dato ingresado es incorrecto');
+      alert('El dato ingresado es incorrecto');
   }
-
 };
+//la función verCarrito sirve para que el cliente vea lo que eligió
 const verCarrito = () => {
   carrito.forEach((producto) => {
     alert('Producto: ' + producto.nombre + ' Precio: $' + producto.valor + ' Categoría: ' + producto.categoria);
 
   })
 }
+//la función total calcula el total a pagar
 const total = () => {
   total = carrito.reduce((total, producto) => total + producto.valor, 0)
   alert('El total a pagar es: $' + total);
 }
-/*
-const borrarProducto = () => {
-  let borrar = confirm('¿Quiere borrar algún producto de su carrito de compras?');
-  while(borrar){
-    const cate = prompt('Ingrese la categoría del producto que desea eliminar: \n 1.Aceites \n 2.Cosmética \n 3.Aceitunas');
-    switch (cate){
-      case '1':
-      const produ = ('Ingrese el producto que desea eliminar: \n 1.AOVE 250ml \n 2. AOVE 500ml \n 3.AOVE 1lt \n 4.AOVE 2lt \n 5.AOVE 5lt')
-
-    }
-
-  }
-
-}
-*/
+//la función inicializar engloba las funciones anteriores y se repite si el cliente quiere compra mas de un producto
 const inicializar = () => {
   let continuar = confirm('¿Quiere comprar algún producto de la finca?');
   while (continuar) {
@@ -155,5 +144,4 @@ const inicializar = () => {
     continuar = confirm('¿Quiere comprar otro producto de la finca?');
   }
 }
-
 alert('Gracias por visitar Finca Oliva Olivos');

@@ -8,38 +8,38 @@ const compraAceite = () => {
   switch (elige) {
     case '1':
       carrito.push({
-        valor = 800,
-        nombre = 'AOVE 250ml',
-        categoria = 'Aceite'
-      })
+        valor: 800,
+        nombre: 'AOVE 250ml',
+        categoria: 'Aceite',
+      });
       break;
     case '2':
       carrito.push({
-        valor = 1500,
-        nombre = 'AOVE 500ml',
-        categoria = 'Aceite'
-      })
+        valor: 1500,
+        nombre: 'AOVE 500ml',
+        categoria: 'Aceite',
+      });
       break;
     case '3':
       carrito.push({
-        valor = 2700,
-        nombre = 'AOVE 1lt',
-        categoria = 'Aceite'
-      })
+        valor: 2700,
+        nombre: 'AOVE 1lt',
+        categoria: 'Aceite',
+      });
       break;
     case '4':
       carrito.push({
-        valor = 4800,
-        nombre = 'AOVE 2lt',
-        categoria = 'Aceite'
-      })
+        valor: 4800,
+        nombre: 'AOVE 2lt',
+        categoria: 'Aceite',
+      });
       break;
     case '5':
       carrito.push({
-        valor = 9400,
-        nombre = 'AOVE 5lt',
-        categoria = 'Aceite'
-      })
+        valor: 9400,
+        nombre: 'AOVE 5lt',
+        categoria: 'Aceite',
+      });
       break;
     default:
       alert('El dato ingresado es incorrecto');
@@ -52,52 +52,54 @@ const compraCosmetica = () => {
   switch (elige) {
     case '1':
       carrito.push({
-        valor = 700,
-        nombre = 'Jabón de aceite de oliva',
-        categoria = 'Cosmética'
-      })
+        valor: 700,
+        nombre: 'Jabón de aceite de oliva',
+        categoria: 'Cosmética',
+      });
       break;
     case '2':
       carrito.push({
-        valor = 1900,
-        nombre = 'Jabón x3',
-        categoria = 'Cosmética'
-      })
+        valor: 1900,
+        nombre: 'Jabón x3',
+        categoria: 'Cosmética',
+      });
       break;
     case '3':
       carrito.push({
-        valor = 2000,
-        nombre = 'Jabonera rústica',
-        categoria = 'Cosmética'
-      })
+        valor: 2000,
+        nombre: 'Jabonera rústica',
+        categoria: 'Cosmética',
+      });
       break;
     case '4':
       carrito.push({
-        valor = 4100,
-        nombre = 'Combo: 4 jabones + jabonera',
-        categoria = 'Cosmética'
-      })
+        valor: 4100,
+        nombre: 'Combo: 4 jabones + jabonera',
+        categoria: 'Cosmética',
+      });
       break;
     default:
       alert('El dato ingresado es incorrecto');
   }
 };
 const compraAceituna = () => {
-  let elige = prompt('Elige uno de los productos: 1. Aceituna negra 2.Aceituna verde');
+  let elige = prompt(
+    'Elige uno de los productos: 1. Aceituna negra 2.Aceituna verde'
+  );
   switch (elige) {
     case '1':
       carrito.push({
-        valor = 1900,
-        nombre = 'Aceituna negra',
-        categoria = 'Aceituna'
-      })
+        valor: 1900,
+        nombre: 'Aceituna negra',
+        categoria: 'Aceituna',
+      });
       break;
     case '2':
       carrito.push({
-        valor = 1900,
-        nombre = 'Aceituna verde',
-        categoria = 'Aceituna'
-      })
+        valor: 1900,
+        nombre: 'Aceituna verde',
+        categoria: 'Aceituna',
+      });
       break;
     default:
       alert('El dato ingresado es incorrecto');
@@ -123,17 +125,23 @@ const compra = () => {
   }
 };
 //la función verCarrito sirve para que el cliente vea lo que eligió
-/*const verCarrito = () => {
+const verCarrito = () => {
   carrito.forEach((producto) => {
-    alert('Producto: ' + producto.nombre + ' Precio: $' + producto.valor + ' Categoría: ' + producto.categoria);
-
-  })
-}*/
+    alert(
+      'Producto: ' +
+        producto.nombre +
+        ' Precio: $' +
+        producto.valor +
+        ' Categoría: ' +
+        producto.categoria
+    );
+  });
+};
 //la función total calcula el total a pagar
-/*const total = () => {
-  total = carrito.reduce((total, producto) => total + producto.valor, 0)
+const total = () => {
+  total = carrito.reduce((total, producto) => total + producto.valor, 0);
   alert('El total a pagar es: $' + total);
-}*/
+};
 //la función inicializar se repite si el cliente quiere compra mas de un producto
 const inicializar = () => {
   let continuar = confirm('¿Quiere comprar algún producto de la finca?');
@@ -141,10 +149,8 @@ const inicializar = () => {
     compra();
     continuar = confirm('¿Quiere comprar otro producto de la finca?');
   }
-}
-compra();
-console.log(carrito);
-//inicializar();
-//verCarrito();
-//total();
+};
+inicializar();
+verCarrito();
+total();
 alert('Gracias por visitar Finca Oliva Olivos');

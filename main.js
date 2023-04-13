@@ -10,35 +10,35 @@ const compraAceite = () => {
       carrito.push({
         valor: 800,
         nombre: 'AOVE 250ml',
-        categoria: 'Aceite',
+        categoria: 'Aceite'
       });
       break;
     case '2':
       carrito.push({
         valor: 1500,
         nombre: 'AOVE 500ml',
-        categoria: 'Aceite',
+        categoria: 'Aceite'
       });
       break;
     case '3':
       carrito.push({
         valor: 2700,
         nombre: 'AOVE 1lt',
-        categoria: 'Aceite',
+        categoria: 'Aceite'
       });
       break;
     case '4':
       carrito.push({
         valor: 4800,
         nombre: 'AOVE 2lt',
-        categoria: 'Aceite',
+        categoria: 'Aceite'
       });
       break;
     case '5':
       carrito.push({
         valor: 9400,
         nombre: 'AOVE 5lt',
-        categoria: 'Aceite',
+        categoria: 'Aceite'
       });
       break;
     default:
@@ -54,28 +54,28 @@ const compraCosmetica = () => {
       carrito.push({
         valor: 700,
         nombre: 'Jabón de aceite de oliva',
-        categoria: 'Cosmética',
+        categoria: 'Cosmética'
       });
       break;
     case '2':
       carrito.push({
         valor: 1900,
         nombre: 'Jabón x3',
-        categoria: 'Cosmética',
+        categoria: 'Cosmética'
       });
       break;
     case '3':
       carrito.push({
         valor: 2000,
         nombre: 'Jabonera rústica',
-        categoria: 'Cosmética',
+        categoria: 'Cosmética'
       });
       break;
     case '4':
       carrito.push({
         valor: 4100,
         nombre: 'Combo: 4 jabones + jabonera',
-        categoria: 'Cosmética',
+        categoria: 'Cosmética'
       });
       break;
     default:
@@ -91,14 +91,14 @@ const compraAceituna = () => {
       carrito.push({
         valor: 1900,
         nombre: 'Aceituna negra',
-        categoria: 'Aceituna',
+        categoria: 'Aceituna'
       });
       break;
     case '2':
       carrito.push({
         valor: 1900,
         nombre: 'Aceituna verde',
-        categoria: 'Aceituna',
+        categoria: 'Aceituna'
       });
       break;
     default:

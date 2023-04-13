@@ -138,7 +138,7 @@ const verCarrito = () => {
   });
 };
 //la función total calcula el total a pagar
-const total = () => {
+const totalCarrito = () => {
   total = carrito.reduce((total, producto) => total + producto.valor, 0);
   alert('El total a pagar es: $' + total);
 };
@@ -153,5 +153,5 @@ const inicializar = () => {
 //llamo las funciones y doy un saludo final
 inicializar();
 verCarrito();
-total();
+totalCarrito();
 alert('Gracias por visitar Finca Oliva Olivos');

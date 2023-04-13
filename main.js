@@ -137,12 +137,12 @@ const verCarrito = () => {
     );
   });
 };
-//la función total calcula el total a pagar
+//la función 'totalCarrito' calcula el total a pagar (uso el método 'reduce')
 const totalCarrito = () => {
   total = carrito.reduce((total, producto) => total + producto.valor, 0);
   alert('El total a pagar es: $' + total);
 };
-//la función inicializar se repite si el cliente quiere comprar mas de un producto (ciclo)
+//la función 'inicializar' repite la función 'compra' si el cliente quiere comprar más de un producto (ciclo)
 const inicializar = () => {
   let continuar = confirm('¿Quiere comprar algún producto de la finca?');
   while (continuar) {

@@ -1,6 +1,6 @@
 const carrito = []; //en este array voy a guardar objetos
-let total = 0; //este total lo uo en la función compra
-//las funciones compraAceite, compraCosmetica y compraAceituna son diferentes categorías y dentro de ellas están los productos que el cliente puede elegir
+let total = 0; //este total lo uso en la función 'compra'
+//las funciones 'compraAceite', 'compraCosmetica' y 'compraAceituna' son diferentes categorías y dentro de ellas están los productos que el cliente puede elegir
 const compraAceite = () => {
   let elige = prompt(
     'Elige uno de los productos: \n 1.AOVE 250ml \n 2. AOVE 500ml \n 3.AOVE 1lt \n 4.AOVE 2lt \n 5.AOVE 5lt'
@@ -10,35 +10,35 @@ const compraAceite = () => {
       carrito.push({
         valor: 800,
         nombre: 'AOVE 250ml',
-        categoria: 'Aceite'
+        categoria: 'Aceite',
       });
       break;
     case '2':
       carrito.push({
         valor: 1500,
         nombre: 'AOVE 500ml',
-        categoria: 'Aceite'
+        categoria: 'Aceite',
       });
       break;
     case '3':
       carrito.push({
         valor: 2700,
         nombre: 'AOVE 1lt',
-        categoria: 'Aceite'
+        categoria: 'Aceite',
       });
       break;
     case '4':
       carrito.push({
         valor: 4800,
         nombre: 'AOVE 2lt',
-        categoria: 'Aceite'
+        categoria: 'Aceite',
       });
       break;
     case '5':
       carrito.push({
         valor: 9400,
         nombre: 'AOVE 5lt',
-        categoria: 'Aceite'
+        categoria: 'Aceite',
       });
       break;
     default:
@@ -54,28 +54,28 @@ const compraCosmetica = () => {
       carrito.push({
         valor: 700,
         nombre: 'Jabón de aceite de oliva',
-        categoria: 'Cosmética'
+        categoria: 'Cosmética',
       });
       break;
     case '2':
       carrito.push({
         valor: 1900,
         nombre: 'Jabón x3',
-        categoria: 'Cosmética'
+        categoria: 'Cosmética',
       });
       break;
     case '3':
       carrito.push({
         valor: 2000,
         nombre: 'Jabonera rústica',
-        categoria: 'Cosmética'
+        categoria: 'Cosmética',
       });
       break;
     case '4':
       carrito.push({
         valor: 4100,
         nombre: 'Combo: 4 jabones + jabonera',
-        categoria: 'Cosmética'
+        categoria: 'Cosmética',
       });
       break;
     default:
@@ -91,21 +91,21 @@ const compraAceituna = () => {
       carrito.push({
         valor: 1900,
         nombre: 'Aceituna negra',
-        categoria: 'Aceituna'
+        categoria: 'Aceituna',
       });
       break;
     case '2':
       carrito.push({
         valor: 1900,
         nombre: 'Aceituna verde',
-        categoria: 'Aceituna'
+        categoria: 'Aceituna',
       });
       break;
     default:
       alert('El dato ingresado es incorrecto');
   }
 };
-//en la función compra llamaré a las funciones anteriores
+//en la función 'compra' llamaré a las funciones anteriores
 const compra = () => {
   let grupo = prompt(
     'Elige una de las categorias: \n 1. Aceites de oliva virgen extra \n 2.Cosmética \n 3.Aceitunas sin carozo'
@@ -124,7 +124,7 @@ const compra = () => {
       alert('El dato ingresado es incorrecto');
   }
 };
-//la función verCarrito sirve para que el cliente vea lo que eligió
+//la función 'verCarrito' sirve para que el cliente vea lo que eligió y aparece mediante un alert (recorro el array 'carrito')
 const verCarrito = () => {
   carrito.forEach((producto) => {
     alert(
@@ -142,7 +142,7 @@ const total = () => {
   total = carrito.reduce((total, producto) => total + producto.valor, 0);
   alert('El total a pagar es: $' + total);
 };
-//la función inicializar se repite si el cliente quiere compra mas de un producto
+//la función inicializar se repite si el cliente quiere comprar mas de un producto (ciclo)
 const inicializar = () => {
   let continuar = confirm('¿Quiere comprar algún producto de la finca?');
   while (continuar) {
@@ -150,6 +150,7 @@ const inicializar = () => {
     continuar = confirm('¿Quiere comprar otro producto de la finca?');
   }
 };
+//llamo las funciones y doy un saludo final
 inicializar();
 verCarrito();
 total();

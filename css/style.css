@@ -1,0 +1,12 @@
+#title {
+  text-align: center;
+  color: aquamarine;
+  font: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#category {
+  border-radius: 2px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: beige;
+}

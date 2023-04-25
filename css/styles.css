@@ -1,0 +1,16 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #d8f799;
+}
+#title {
+  text-align: center;
+  font: bold;
+}
+
+#category {
+  border-radius: 2px;
+}

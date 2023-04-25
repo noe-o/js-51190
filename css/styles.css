@@ -3,20 +3,23 @@
   padding: 0px;
 }
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: cursive;
   background-color: #d8f799;
 }
 #title {
-  margin: 2px;
-  padding: 2px;
+  margin: 5px;
+  padding: 10px;
   text-align: center;
   font: bolder;
 }
 
 #category {
-  border-radius: 2px;
+  flex-direction: row;
+  text-align: center;
 }
 
 .card-body {
   text-align: center;
+  border: 0.5px;
+  border-radius: 2px;
 }

@@ -20,9 +20,9 @@
   </head>
   <body>
     <header>
-      <nav id="nav" class="navegador">
+      <nav id="nav" class="nav">
         <ul>
-          <li><a href="./index.html">Comprar</a></li>
+          <li><a href="./index.html">Inicio</a></li>
           <li><a href="./editar.html">Editar Productos</a></li>
         </ul>
       </nav>
@@ -32,21 +32,16 @@
         <input
           type="text"
           name="nombre"
-          placeholder="Ingrese nombre de producto"
+          placeholder="Nombre del producto"
           required
         />
         <input
           type="text"
-          name="descrip"
-          placeholder="Ingrese una descripcion de producto"
+          name="detalle"
+          placeholder="Descripción (fabricación, tamaño, tipo de envase, etc.)"
           required
         />
-        <input
-          type="number"
-          name="precio"
-          placeholder="Ingrese Precio"
-          required
-        />
+        <input type="number" name="precio" placeholder="Precio" required />
         <button class="btn" type="submit">Crear</button>
       </form>
       <section id="productos" class="productos"></section>

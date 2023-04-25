@@ -17,10 +17,13 @@ body {
   border: none;
 }
 
-.card-body {
-  text-align: center;
-  flex-direction: row;
+.card {
   border: 0.5px;
   border-color: black;
   border-radius: 2px;
+}
+
+.card-body {
+  text-align: center;
+  flex-direction: row;
 }

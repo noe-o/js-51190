@@ -1,4 +1,4 @@
-const carrito = [];
+/*const carrito = [];
 let total = 0; 
 const compraAceite = () => {
   let elige = prompt(
@@ -156,3 +156,4 @@ totalCarrito();
 alert('Gracias por visitar Finca Oliva Olivos');
 
 
+*/

@@ -7,8 +7,10 @@ body {
   background-color: #d8f799;
 }
 #title {
+  margin: 2px;
+  padding: 2px;
   text-align: center;
-  font: bold;
+  font: bolder;
 }
 
 #category {

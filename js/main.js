@@ -1,6 +1,5 @@
-const carrito = []; //en este array voy a guardar objetos
-let total = 0; //este total lo uso en la función 'compra'
-//las funciones 'compraAceite', 'compraCosmetica' y 'compraAceituna' son diferentes categorías y dentro de ellas están los productos que el cliente puede elegir
+const carrito = [];
+let total = 0; 
 const compraAceite = () => {
   let elige = prompt(
     'Elige uno de los productos: \n 1.AOVE 250ml \n 2. AOVE 500ml \n 3.AOVE 1lt \n 4.AOVE 2lt \n 5.AOVE 5lt'
@@ -105,7 +104,7 @@ const compraAceituna = () => {
       alert('El dato ingresado es incorrecto');
   }
 };
-//en la función 'compra' llamaré a las funciones anteriores
+
 const compra = () => {
   let grupo = prompt(
     'Elige una de las categorias: \n 1. Aceites de oliva virgen extra \n 2.Cosmética \n 3.Aceitunas sin carozo'
@@ -124,7 +123,7 @@ const compra = () => {
       alert('El dato ingresado es incorrecto');
   }
 };
-//la función 'verCarrito' sirve para que el cliente vea lo que eligió y aparece mediante un alert (recorro el array 'carrito')
+
 const verCarrito = () => {
   carrito.forEach((producto) => {
     alert(
@@ -137,12 +136,12 @@ const verCarrito = () => {
     );
   });
 };
-//la función 'totalCarrito' calcula el total a pagar (uso el método 'reduce')
+
 const totalCarrito = () => {
   total = carrito.reduce((total, producto) => total + producto.valor, 0);
   alert('El total a pagar es: $' + total);
 };
-//la función 'inicializar' repite la función 'compra' si el cliente quiere comprar más de un producto (ciclo)
+
 const inicializar = () => {
   let continuar = confirm('¿Quiere comprar algún producto de la finca?');
   while (continuar) {
@@ -150,8 +149,10 @@ const inicializar = () => {
     continuar = confirm('¿Quiere comprar otro producto de la finca?');
   }
 };
-//llamo las funciones y doy un saludo final
+
 inicializar();
 verCarrito();
 totalCarrito();
 alert('Gracias por visitar Finca Oliva Olivos');
+
+

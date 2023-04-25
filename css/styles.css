@@ -7,19 +7,20 @@ body {
   background-color: #d8f799;
 }
 #title {
-  margin: 5px;
+  margin: 10px;
   padding: 10px;
   text-align: center;
   font: bolder;
 }
 
 #category {
-  flex-direction: row;
-  text-align: center;
+  border: none;
 }
 
 .card-body {
   text-align: center;
+  flex-direction: row;
   border: 0.5px;
+  border-color: black;
   border-radius: 2px;
 }

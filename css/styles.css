@@ -16,3 +16,7 @@ body {
 #category {
   border-radius: 2px;
 }
+
+.card-body {
+  text-align: center;
+}

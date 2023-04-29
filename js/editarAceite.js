@@ -22,7 +22,7 @@ const crearAceite = () => {
       datos['detalle'].value,
       datos['precio'].value
     );
-    adeites.push(aceite);
+    aceites.push(aceite);
     localStorage.setItem('aceites', JSON.stringify(aceites));
     formularioCrear.reset();
   });

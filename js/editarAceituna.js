@@ -17,12 +17,12 @@ const crearAceituna = () => {
   formularioCrear.addEventListener('submit', (e) => {
     e.preventDefault();
     const datos = e.target.children;
-    const aceitunas = new Aceituna(
+    const aceituna = new Aceituna(
       datos['nombre'].value,
       datos['detalle'].value,
       datos['precio'].value
     );
-    aceitunas.push(aceitunas);
+    aceitunas.push(aceituna);
     localStorage.setItem('aceitunas', JSON.stringify(aceitunas));
     formularioCrear.reset();
   });

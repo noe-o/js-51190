@@ -17,7 +17,7 @@ const crearCosmetica = () => {
   formularioCrear.addEventListener('submit', (e) => {
     e.preventDefault();
     const datos = e.target.children;
-    const cosmeticas = new Cosmetica(
+    const cosmetica = new Cosmetica(
       datos['nombre'].value,
       datos['detalle'].value,
       datos['precio'].value
@@ -30,7 +30,7 @@ const crearCosmetica = () => {
 
 const verCosmetica = () => {
   const ContenedorCosmetica = document.querySelector('#cosmetica');
-  cosmeticas.forEach((cosmeticas) => {
+  cosmeticas.forEach((cosmetica) => {
     const tarjetaCosmetica = document.createElement('div');
     tarjetaCosmetica.className = 'cosmetica';
     tarjetaCosmetica.innerHTML = `

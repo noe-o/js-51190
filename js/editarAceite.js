@@ -1,7 +1,7 @@
 class Producto {
-  constructor(nombre, descrip, precio) {
+  constructor(nombre, detalle, precio) {
     this.nombre = nombre;
-    this.descrip = descrip;
+    this.detalle = detalle;
     this.precio = parseFloat(precio);
     this.enviogratis = false;
   }
@@ -19,7 +19,7 @@ const crearAceite = () => {
     const datos = e.target.children;
     const producto = new Producto(
       datos['nombre'].value,
-      datos['descrip'].value,
+      datos['detalle'].value,
       datos['precio'].value
     );
     productos.push(producto);
@@ -36,7 +36,7 @@ const verProductos = () => {
     tarjetaProducto.innerHTML = `
           <form class="editar">
               <input type="text" name="nombre" value="${producto.nombre}">
-              <input type="text" name="descrip" value="${producto.descrip}">
+              <input type="text" name="detalle" value="${producto.detalle}">
               <input type="number" name="precio" value="${producto.precio}">
               <button class="btn" type="submit">Editar</button>
           </form>

@@ -1,16 +1,45 @@
-const productos = JSON.parse(localStorage.getItem('productos')) ?? [];
+const aceites = JSON.parse(localStorage.getItem('aceites')) ?? [];
 
-const ContenedorProductos = document.querySelector('#aceite');
-productos.forEach((producto) => {
-  const tarjetaProducto = document.createElement('div');
-  tarjetaProducto.className = 'aceite';
-  tarjetaProducto.innerHTML = `
-        <h3>${producto.nombre}</h3>
-        <p>${producto.detalle}</p>
-        <span>${producto.precio} Pesos</span>
+const ContenedorAceites = document.querySelector('#aceite');
+aceites.forEach((aceite) => {
+  const tarjetaAceite = document.createElement('div');
+  tarjetaAceite.className = 'aceite';
+  tarjetaAceite.innerHTML = `
+        <h3>${aceite.nombre}</h3>
+        <p>${aceite.detalle}</p>
+        <span>${aceite.precio} Pesos</span>
         <button class="btn">Carrito</button>`;
-  ContenedorProductos.append(tarjetaProducto);
+  ContenedorAceites.append(tarjetaAceite);
 });
+
+const cosmeticas = JSON.parse(localStorage.getItem('cosmeticas')) ?? [];
+
+const ContenedorCosmetica = document.querySelector('#cosmetica');
+cosmeticas.forEach((cosmetica) => {
+  const tarjetaCosmetica = document.createElement('div');
+  tarjetaCosmetica.className = 'cosmetica';
+  tarjetaCosmetica.innerHTML = `
+        <h3>${cosmetica.nombre}</h3>
+        <p>${cosmetica.detalle}</p>
+        <span>${cosmetica.precio} Pesos</span>
+        <button class="btn">Carrito</button>`;
+  ContenedorCosmetica.append(tarjetaCosmetica);
+});
+
+const aceitunas = JSON.parse(localStorage.getItem('aceitunas')) ?? [];
+
+const ContenedorAceitunas = document.querySelector('#aceituna');
+aceitunas.forEach((aceituna) => {
+  const tarjetaAceitunas = document.createElement('div');
+  tarjetaAceitunas.className = 'aceituna';
+  tarjetaAceitunas.innerHTML = `
+        <h3>${aceituna.nombre}</h3>
+        <p>${aceituna.detalle}</p>
+        <span>${aceituna.precio} Pesos</span>
+        <button class="btn">Carrito</button>`;
+  ContenedorAceitunas.append(tarjetaAceitunas);
+});
+
 /*const carrito = [];
 let total = 0; 
 const compraAceite = () => {

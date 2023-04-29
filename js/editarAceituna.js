@@ -13,7 +13,7 @@ class Aceituna {
 const aceitunas = JSON.parse(localStorage.getItem('aceitunas')) ?? [];
 
 const crearAceituna = () => {
-  const formularioCrear = document.querySelector('#crearAceite');
+  const formularioCrear = document.querySelector('#crearAceituna');
   formularioCrear.addEventListener('submit', (e) => {
     e.preventDefault();
     const datos = e.target.children;

@@ -12,8 +12,8 @@ class Producto {
 }
 const productos = JSON.parse(localStorage.getItem('productos')) ?? [];
 
-const crearProducto = () => {
-  const formularioCrear = document.querySelector('#crearProducto');
+const crearAceite = () => {
+  const formularioCrear = document.querySelector('#crearAceite');
   formularioCrear.addEventListener('submit', (e) => {
     e.preventDefault();
     const datos = e.target.children;
@@ -29,12 +29,11 @@ const crearProducto = () => {
 };
 
 const verProductos = () => {
-  const ContenedorProductos = document.querySelector('#productos');
+  const ContenedorProductos = document.querySelector('#aceite');
   productos.forEach((producto) => {
     const tarjetaProducto = document.createElement('div');
-    tarjetaProducto.className = 'producto';
+    tarjetaProducto.className = 'aceite';
     tarjetaProducto.innerHTML = `
-          <img src="./src/img/tv-with-wide-screen.jpg" alt="">
           <form class="editar">
               <input type="text" name="nombre" value="${producto.nombre}">
               <input type="text" name="descrip" value="${producto.descrip}">
@@ -45,5 +44,5 @@ const verProductos = () => {
     ContenedorProductos.append(tarjetaProducto);
   });
 };
-crearProducto();
+crearAceite();
 verProductos();

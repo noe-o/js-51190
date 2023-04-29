@@ -1,4 +1,4 @@
-class Producto {
+class Aceite {
   constructor(nombre, detalle, precio) {
     this.nombre = nombre;
     this.detalle = detalle;
@@ -10,30 +10,30 @@ class Producto {
     this.envioGratis = true;
   }
 }
-const productos = JSON.parse(localStorage.getItem('productos')) ?? [];
+const aceites = JSON.parse(localStorage.getItem('aceites')) ?? [];
 
 const crearAceite = () => {
   const formularioCrear = document.querySelector('#crearAceite');
   formularioCrear.addEventListener('submit', (e) => {
     e.preventDefault();
     const datos = e.target.children;
-    const producto = new Producto(
+    const aceite = new Aceite(
       datos['nombre'].value,
       datos['detalle'].value,
       datos['precio'].value
     );
-    productos.push(producto);
-    localStorage.setItem('productos', JSON.stringify(productos));
+    adeites.push(aceite);
+    localStorage.setItem('aceites', JSON.stringify(aceites));
     formularioCrear.reset();
   });
 };
 
-const verProductos = () => {
-  const ContenedorProductos = document.querySelector('#aceite');
-  productos.forEach((producto) => {
-    const tarjetaProducto = document.createElement('div');
-    tarjetaProducto.className = 'aceite';
-    tarjetaProducto.innerHTML = `
+const verAceites = () => {
+  const ContenedorAceites = document.querySelector('#aceite');
+  aceites.forEach((aceite) => {
+    const tarjetaAceite = document.createElement('div');
+    tarjetaAceite.className = 'aceite';
+    tarjetaAceite.innerHTML = `
           <form class="editar">
               <input type="text" name="nombre" value="${producto.nombre}">
               <input type="text" name="detalle" value="${producto.detalle}">
@@ -41,8 +41,8 @@ const verProductos = () => {
               <button class="btn" type="submit">Editar</button>
           </form>
           <button class="btn">Borrar</button>`;
-    ContenedorProductos.append(tarjetaProducto);
+    ContenedorAceites.append(tarjetaAceite);
   });
 };
 crearAceite();
-verProductos();
+verAceites();

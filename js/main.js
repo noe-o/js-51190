@@ -3,9 +3,8 @@ const productos = JSON.parse(localStorage.getItem("productos")) ?? []
 const ContenedorProductos = document.querySelector("#aceite")
 productos.forEach(producto => {
     const tarjetaProducto = document.createElement("div")
-    tarjetaProducto.className = "producto"
+    tarjetaProducto.className = "aceite"
     tarjetaProducto.innerHTML = `
-        <img src="./src/img/tv-with-wide-screen.jpg" alt="">
         <h3>${producto.nombre}</h3>
         <p>${producto.descrip}</p>
         <span>${producto.precio} Pesos</span>

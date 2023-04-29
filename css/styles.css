@@ -10,7 +10,8 @@ body {
   margin: 30px 10px;
   padding: 10px;
   text-align: center;
-  font: bolder;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 #category {
@@ -28,6 +29,16 @@ body {
   flex-direction: row;
 }
 
-#nav{
+nav {
+  display: flex;
+  justify-content: flex-end;
+  text-align: end;
+  color: black;
+}
+nav ul li {
   list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
 }

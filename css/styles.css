@@ -66,3 +66,19 @@ main {
   background-color: #d8f799;
   margin: 10px auto;
 }
+
+section#aceite {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section#cosmetica {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section#aceituna {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

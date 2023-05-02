@@ -38,9 +38,9 @@ const verAceites = () => {
               <input type="text" name="nombre" value="${aceite.nombre}">
               <input type="text" name="detalle" value="${aceite.detalle}">
               <input type="number" name="precio" value="${aceite.precio}">
-              <button class="btn" type="submit">Editar</button>
+              <button class="btn btn-secondary" type="submit">Editar</button>
           </form>
-          <button class="btn">Borrar</button>`;
+          <button class="btn btn-secondary">Borrar</button>`;
     ContenedorAceites.append(tarjetaAceite);
   });
 };

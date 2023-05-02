@@ -38,9 +38,9 @@ const verCosmetica = () => {
               <input type="text" name="nombre" value="${cosmetica.nombre}">
               <input type="text" name="detalle" value="${cosmetica.detalle}">
               <input type="number" name="precio" value="${cosmetica.precio}">
-              <button class="btn" type="submit">Editar</button>
+              <button class="btn btn-secondary" type="submit">Editar</button>
           </form>
-          <button class="btn">Borrar</button>`;
+          <button class="btn btn-secondary">Borrar</button>`;
     ContenedorCosmetica.append(tarjetaCosmetica);
   });
 };

@@ -16,8 +16,9 @@ body {
 
 .aceite {
   background-color: #d8f799;
-  border: 2px;
-  border-radius: 5px;
+  border: 1px;
+  border-color: black;
+  border-radius: 2px;
   display: flex;
   flex-direction: column;
   width: 300px;

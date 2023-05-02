@@ -20,6 +20,19 @@ body {
 
 .navbar {
   text-align: end;
+  justify-content: end;
+  padding: 10px;
+  margin: 10px;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar li:hover {
+  background-color: black;
+  color: white;
+  border-radius: 3px;
 }
 
 .card {

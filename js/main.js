@@ -8,7 +8,7 @@ aceites.forEach((aceite) => {
         <h3>${aceite.nombre}</h3>
         <p>${aceite.detalle}</p>
         <span>${aceite.precio} Pesos</span>
-        <button class="btn">Comprar</button>`;
+        <button class="btn btn-sucess">Comprar</button>`;
   ContenedorAceites.append(tarjetaAceite);
 });
 
@@ -22,7 +22,7 @@ cosmeticas.forEach((cosmetica) => {
         <h3>${cosmetica.nombre}</h3>
         <p>${cosmetica.detalle}</p>
         <span>${cosmetica.precio} Pesos</span>
-        <button class="btn">Carrito</button>`;
+        <button class="btn btn-sucess">Comprar</button>`;
   ContenedorCosmetica.append(tarjetaCosmetica);
 });
 
@@ -36,7 +36,7 @@ aceitunas.forEach((aceituna) => {
         <h3>${aceituna.nombre}</h3>
         <p>${aceituna.detalle}</p>
         <span>${aceituna.precio} Pesos</span>
-        <button class="btn">Carrito</button>`;
+        <button class="btn btn-sucess">Comprar</button>`;
   ContenedorAceitunas.append(tarjetaAceitunas);
 });
 

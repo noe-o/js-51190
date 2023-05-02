@@ -58,19 +58,6 @@ body {
   border-radius: 3px;
 }
 
-.card {
-  border: 0.5px;
-  border-color: black;
-  border-radius: 2px;
-  background-color: #d8f799;
-}
-
-.card-body {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
 .editar {
   background-color: #d8f799;
 }

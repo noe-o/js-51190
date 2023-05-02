@@ -34,7 +34,7 @@ const verCosmetica = () => {
     const tarjetaCosmetica = document.createElement('div');
     tarjetaCosmetica.className = 'producto';
     tarjetaCosmetica.innerHTML = `
-          <form class="editar">
+          <form class="formulario">
               <input type="text" name="nombre" value="${cosmetica.nombre}">
               <input type="text" name="detalle" value="${cosmetica.detalle}">
               <input type="number" name="precio" value="${cosmetica.precio}">

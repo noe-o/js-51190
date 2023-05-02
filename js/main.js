@@ -8,7 +8,7 @@ aceites.forEach((aceite) => {
         <h4>${aceite.nombre}</h4>
         <p>${aceite.detalle}</p>
         <span>${aceite.precio} Pesos</span>
-        <button class="btn btn-sucess">Comprar</button>`;
+        <button class="btn btn-outline-sucess">Comprar</button>`;
   ContenedorAceites.append(tarjetaAceite);
 });
 

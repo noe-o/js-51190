@@ -34,7 +34,7 @@ const verAceites = () => {
     const tarjetaAceite = document.createElement('div');
     tarjetaAceite.className = 'producto';
     tarjetaAceite.innerHTML = `
-          <form class="card editar">
+          <form class="formulario">
               <input type="text" name="nombre" value="${aceite.nombre}">
               <input type="text" name="detalle" value="${aceite.detalle}">
               <input type="number" name="precio" value="${aceite.precio}">

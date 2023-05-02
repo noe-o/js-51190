@@ -22,7 +22,10 @@ main {
   font-size: 50px;
   font-weight: bold;
 }
-
+.aceite {
+  display: flex;
+  flex-direction: row;
+}
 .productos {
   display: flex;
   flex-wrap: wrap;

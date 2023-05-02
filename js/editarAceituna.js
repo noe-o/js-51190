@@ -29,7 +29,7 @@ const crearAceituna = () => {
 };
 
 const verAceituna = () => {
-  const ContenedorAceituna = document.querySelector('#aceituna');
+  const ContenedorAceituna = document.querySelector('section#aceituna');
   aceitunas.forEach((aceituna) => {
     const tarjetaAceituna = document.createElement('div');
     tarjetaAceituna.className = 'producto';

@@ -32,7 +32,7 @@ const verCosmetica = () => {
   const ContenedorCosmetica = document.querySelector('#cosmetica');
   cosmeticas.forEach((cosmetica) => {
     const tarjetaCosmetica = document.createElement('div');
-    tarjetaCosmetica.className = 'cosmetica';
+    tarjetaCosmetica.className = 'producto';
     tarjetaCosmetica.innerHTML = `
           <form class="editar">
               <input type="text" name="nombre" value="${cosmetica.nombre}">

@@ -32,7 +32,7 @@ const verAceites = () => {
   const ContenedorAceites = document.querySelector('#aceite');
   aceites.forEach((aceite) => {
     const tarjetaAceite = document.createElement('div');
-    tarjetaAceite.className = 'aceite';
+    tarjetaAceite.className = 'producto';
     tarjetaAceite.innerHTML = `
           <form class="card editar">
               <input type="text" name="nombre" value="${aceite.nombre}">

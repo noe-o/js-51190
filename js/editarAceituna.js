@@ -32,7 +32,7 @@ const verAceituna = () => {
   const ContenedorAceituna = document.querySelector('#aceituna');
   aceitunas.forEach((aceituna) => {
     const tarjetaAceituna = document.createElement('div');
-    tarjetaAceituna.className = 'aceituna';
+    tarjetaAceituna.className = 'producto';
     tarjetaAceituna.innerHTML = `
           <form class="editar">
               <input type="text" name="nombre" value="${aceituna.nombre}">

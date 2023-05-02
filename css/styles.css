@@ -20,12 +20,6 @@ main {
   font-weight: bold;
 }
 
-.productos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
 .producto {
   background-color: #d8f799;
   border: 1px;
@@ -67,17 +61,17 @@ main {
   margin: 10px auto;
 }
 
-section#aceite {
+#aceite {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-section#cosmetica {
+#cosmetica {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-section#aceituna {
+#aceituna {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

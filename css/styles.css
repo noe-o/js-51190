@@ -33,7 +33,10 @@ body {
 .navbar {
   text-align: center;
   justify-content: end;
-  margin: 10px;
+  margin: 8px;
+  background-color: black;
+  padding: 3px 3px;
+  color: white;
 }
 
 .navbar li {
@@ -41,8 +44,8 @@ body {
 }
 
 .navbar li:hover {
-  background-color: black;
-  color: white;
+  background-color: #d8f799;
+  color: blacke;
   border-radius: 3px;
 }
 

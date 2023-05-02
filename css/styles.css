@@ -14,12 +14,14 @@ body {
   font-weight: bold;
 }
 
-#category {
-  border: none;
+#aceite {
+  background-color: #d8f799;
+  border: 2px;
+  border-radius: 5px;
 }
 
 .navbar {
-  text-align: end;
+  text-align: center;
   justify-content: end;
   padding: 10px;
   margin: 10px;
@@ -44,7 +46,8 @@ body {
 
 .card-body {
   text-align: center;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
 }
 
 .categorias {

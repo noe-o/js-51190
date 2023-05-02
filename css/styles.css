@@ -48,3 +48,13 @@ nav ul li a {
 .catgorias {
   display: flex;
 }
+
+.editar {
+  background-color: #d8f799;
+}
+
+.btn {
+  border: 0.2px;
+  border-radius: 5px;
+  color: black;
+}

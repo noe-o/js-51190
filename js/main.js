@@ -5,7 +5,7 @@ aceites.forEach((aceite) => {
   const tarjetaAceite = document.createElement('div');
   tarjetaAceite.className = 'aceite';
   tarjetaAceite.innerHTML = `
-        <h3>${aceite.nombre}</h3>
+        <h4>${aceite.nombre}</h4>
         <p>${aceite.detalle}</p>
         <span>${aceite.precio} Pesos</span>
         <button class="btn btn-sucess">Comprar</button>`;
@@ -19,7 +19,7 @@ cosmeticas.forEach((cosmetica) => {
   const tarjetaCosmetica = document.createElement('div');
   tarjetaCosmetica.className = 'cosmetica';
   tarjetaCosmetica.innerHTML = `
-        <h3>${cosmetica.nombre}</h3>
+        <h4>${cosmetica.nombre}</h4>
         <p>${cosmetica.detalle}</p>
         <span>${cosmetica.precio} Pesos</span>
         <button class="btn btn-sucess">Comprar</button>`;
@@ -33,7 +33,7 @@ aceitunas.forEach((aceituna) => {
   const tarjetaAceitunas = document.createElement('div');
   tarjetaAceitunas.className = 'aceituna';
   tarjetaAceitunas.innerHTML = `
-        <h3>${aceituna.nombre}</h3>
+        <h4>${aceituna.nombre}</h4>
         <p>${aceituna.detalle}</p>
         <span>${aceituna.precio} Pesos</span>
         <button class="btn btn-sucess">Comprar</button>`;

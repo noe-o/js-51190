@@ -3,7 +3,7 @@ const aceites = JSON.parse(localStorage.getItem('aceites')) ?? [];
 const ContenedorAceites = document.querySelector('#aceite');
 aceites.forEach((aceite) => {
   const tarjetaAceite = document.createElement('div');
-  tarjetaAceite.className = 'aceite';
+  tarjetaAceite.className = 'producto';
   tarjetaAceite.innerHTML = `
         <h4>${aceite.nombre}</h4>
         <p>${aceite.detalle}</p>
@@ -17,7 +17,7 @@ const cosmeticas = JSON.parse(localStorage.getItem('cosmeticas')) ?? [];
 const ContenedorCosmetica = document.querySelector('#cosmetica');
 cosmeticas.forEach((cosmetica) => {
   const tarjetaCosmetica = document.createElement('div');
-  tarjetaCosmetica.className = 'cosmetica';
+  tarjetaCosmetica.className = 'producto';
   tarjetaCosmetica.innerHTML = `
         <h4>${cosmetica.nombre}</h4>
         <p>${cosmetica.detalle}</p>
@@ -31,7 +31,7 @@ const aceitunas = JSON.parse(localStorage.getItem('aceitunas')) ?? [];
 const ContenedorAceitunas = document.querySelector('#aceituna');
 aceitunas.forEach((aceituna) => {
   const tarjetaAceitunas = document.createElement('div');
-  tarjetaAceitunas.className = 'aceituna';
+  tarjetaAceitunas.className = 'producto';
   tarjetaAceitunas.innerHTML = `
         <h4>${aceituna.nombre}</h4>
         <p>${aceituna.detalle}</p>

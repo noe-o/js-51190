@@ -7,6 +7,12 @@ body {
   padding: 10px;
 }
 
+header {
+  background-color: rgb(177, 177, 177);
+}
+h3 {
+  text-align: center;
+}
 #title {
   margin: 30px 10px;
   text-align: center;
@@ -36,9 +42,7 @@ body {
   text-align: center;
   justify-content: end;
   margin: 8px;
-  background-color: black;
   padding: 3px 3px;
-  color: white;
 }
 
 .navbar li {
@@ -47,12 +51,13 @@ body {
 
 .navbar li:hover {
   background-color: #d8f799;
-  color: blacke;
+  color: black;
   border-radius: 3px;
 }
 
 .btn-outline-sucess {
   background-color: rgb(177, 177, 177);
+  color: black;
 }
 
 .formulario {

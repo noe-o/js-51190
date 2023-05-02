@@ -46,22 +46,8 @@ const compraAceite = () => {
   let elige = prompt(
     'Elige uno de los productos: \n 1.AOVE 250ml \n 2. AOVE 500ml \n 3.AOVE 1lt \n 4.AOVE 2lt \n 5.AOVE 5lt'
   );
-  switch (elige) {
-    case '1':
-      carrito.push({
-        valor: 800,
-        nombre: 'AOVE 250ml',
-        categoria: 'Aceite',
-      });
-      break;
-    case '2':
-      carrito.push({
-        valor: 1500,
-        nombre: 'AOVE 500ml',
-        categoria: 'Aceite',
-      });
-      break;
-    case '3':
+
+  
       carrito.push({
         valor: 2700,
         nombre: 'AOVE 1lt',

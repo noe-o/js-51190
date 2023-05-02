@@ -29,23 +29,7 @@ body {
   flex-direction: row;
 }
 
-.nav {
-  display: flex;
-  justify-content: flex-end;
-  text-align: end;
-  color: black;
-  margin: 10px;
-  padding: 10px;
-}
-nav ul li {
-  list-style: none;
-}
-
-nav ul li a {
-  text-decoration: none;
-}
-
-.catgorias {
+.categorias {
   display: flex;
 }
 

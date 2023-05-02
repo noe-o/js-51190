@@ -50,12 +50,6 @@ body {
   flex-direction: column;
 }
 
-.categorias {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .editar {
   background-color: #d8f799;
 }

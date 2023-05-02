@@ -20,7 +20,7 @@ body {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 300px;
 }
 
 .cosmetica {
@@ -29,7 +29,7 @@ body {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 300px;
 }
 
 .aceituna {
@@ -38,7 +38,7 @@ body {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 300px;
 }
 
 .navbar {

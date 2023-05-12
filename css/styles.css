@@ -61,6 +61,11 @@ main {
   margin: 10px auto;
 }
 
+.category {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 #aceite {
   display: flex;
   flex-wrap: wrap;

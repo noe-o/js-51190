@@ -71,7 +71,7 @@ const editarAceite = (id) => {
     const datos = e.target.children;
     const index = aceites.findIndex((aceite) => aceite.id == id);
     aceites[index].nombre = datos['nombre'].value;
-    aceites[index].descrip = datos['detalle'].value;
+    aceites[index].detalle = datos['detalle'].value;
     aceites[index].precio = datos['precio'].value;
     aceites[index].stock = datos['stock'].value;
     localStorage.setItem('aceites', JSON.stringify(aceites));
@@ -106,7 +106,7 @@ const crearAceite = () => {
     idAceite++;
     localStorage.setItem('idAceite', idAceite);
     verAceite(aceite, aceite.verEditar());
-    borrarAceite(producto.id);
+    borrarAceite(aceite.id);
     editarAceite(aceite.id);
     mensaje('Se creó correctamente el producto');
   });

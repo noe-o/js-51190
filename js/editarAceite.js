@@ -119,3 +119,5 @@ const verAceites = () => {
     editarAceite(aceite.id);
   });
 };
+verAceites();
+crearAceite();

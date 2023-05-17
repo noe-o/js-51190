@@ -36,7 +36,7 @@ const aceitunasLit = JSON.parse(localStorage.getItem('aceitunas')) ?? [];
 const aceitunas = [];
 aceitunasLit.forEach((aceituna) => {
   aceitunas.push(
-    new Aceite(
+    new Aceituna(
       aceituna.id,
       aceituna.nombre,
       aceituna.descrip,

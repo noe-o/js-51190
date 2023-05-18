@@ -4,7 +4,7 @@
 }
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color:#EAFBC8;
+  background-color: #eafbc8;
 }
 
 h3 {
@@ -31,6 +31,8 @@ main {
   width: 300px;
   align-items: center;
   text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .navbar {
@@ -61,28 +63,11 @@ main {
   background-color: #d8f799;
   margin: 10px auto;
 }
-#btnBorrar .btn{
-  background-color: #F7E799;
+#btnBorrar .btn {
+  background-color: #f7e799;
 }
-
 
 .category {
   text-decoration: underline;
   font-weight: bold;
-}
-
-#aceite {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-#cosmetica {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-#aceituna {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }

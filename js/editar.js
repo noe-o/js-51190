@@ -8,7 +8,6 @@ class Producto {
   }
   verEditar() {
     return `
-      <img src="../src/img/tv-with-wide-screen.jpg" alt="">
       <form class="editar" id="editar${this.id}">
           <textarea type="text" name="nombre">${this.nombre}</textarea>
           <textarea type="text" name="detalle">${this.detalle}</textarea>
@@ -20,7 +19,6 @@ class Producto {
   }
   verTarjeta() {
     return `
-      <img src="./src/img/tv-with-wide-screen.jpg" alt="">
       <h3>${this.nombre}</h3>
       <p>${this.detalle}</p>
       <span>Precio: ${this.precio} Pesos </span>

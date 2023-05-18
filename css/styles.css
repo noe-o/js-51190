@@ -37,6 +37,7 @@ main {
   text-align: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 5px;
 }
 
 .editar {
@@ -47,22 +48,23 @@ main {
   background-color: #a9f799;
 }
 
-.bg-verde{
+.bg-verde {
   background-color: #a9f799;
 }
 
-#contenedorCarrito{
+#contenedorCarrito {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-#listaCarrito{
+#listaCarrito {
   width: 600px;
   margin: 15px;
   border: 1px solid;
   border-collapse: collapse;
 }
-#listaCarrito td, #listaCarrito th{
+#listaCarrito td,
+#listaCarrito th {
   border: 1px solid;
   padding: 10px;
   text-align: center;

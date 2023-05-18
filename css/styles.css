@@ -26,7 +26,7 @@ main {
   justify-content: space-around;
 }
 .producto {
-  background-color: #b899f7;
+  background-color: #d8f799;
   border: 1px;
   border-color: black;
   border-radius: 2px;
@@ -44,7 +44,10 @@ main {
   flex-direction: column;
 }
 .editar button {
-  background-color: #f7e799;
+  background-color: #a9f799;
+}
+#btnBorrar {
+  background-color: #a9f799;
 }
 
 .navbar {

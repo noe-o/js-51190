@@ -20,7 +20,11 @@ main {
   font-size: 50px;
   font-weight: bold;
 }
-
+.productos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .producto {
   background-color: #d8f799;
   border: 1px;

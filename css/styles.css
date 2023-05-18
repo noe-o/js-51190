@@ -39,6 +39,11 @@ main {
   justify-content: space-around;
 }
 
+.editar{
+  display: flex;
+  flex-direction: column;
+}
+
 .navbar {
   text-align: center;
   justify-content: end;

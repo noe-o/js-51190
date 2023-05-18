@@ -52,7 +52,13 @@ const mensaje = (mensaje) => {
     duration: 1000,
   }).showToast();
 };
-
+Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'El producto se creó con éxito',
+  showConfirmButton: false,
+  timer: 1500,
+});
 const borrarProducto = (id) => {
   const borrarProductoBtn = document.querySelector('#btnBorrar' + id);
   borrarProductoBtn.addEventListener('click', () => {
@@ -61,7 +67,7 @@ const borrarProducto = (id) => {
     localStorage.setItem('productos', JSON.stringify(productos));
     const tarjetaProducto = document.querySelector('#producto' + id);
     tarjetaProducto.remove();
-    mensaje('se borro el producto correctamente');
+    mensaje('El producto se borró');
   });
 };
 const editarProducto = (id) => {
@@ -75,7 +81,7 @@ const editarProducto = (id) => {
     productos[index].precio = datos['precio'].value;
     productos[index].stock = datos['stock'].value;
     localStorage.setItem('productos', JSON.stringify(productos));
-    mensaje('se actualizo correctamente el producto');
+    mensaje('El producto se actualizó');
   });
 };
 const verProducto = (producto, contenidoTarjeta) => {
@@ -107,7 +113,6 @@ const crearProducto = () => {
     verProducto(producto, producto.verEditar());
     borrarProducto(producto.id);
     editarProducto(producto.id);
-    mensaje('Se creo correctamente el produc');
   });
 };
 

@@ -32,16 +32,19 @@
       </nav>
     </header>
     <h1 id="title">FINCA OLIVA OLIVOS</h1>
-
-    <main>
-      <section id="category">
-        <h2>Aceite de Oliva Virgen Extra</h2>
-        <div id="aceite" class="aceite my-3"></div>
-        <h2>Cosmética</h2>
-        <div id="cosmetica" class="cosmetica my-3"></div>
-        <h2>Aceituna sin carozo</h2>
-        <div id="aceituna" class="aceituna my-3"></div>
-      </section>
+    <main id="contenedorCarrito">
+      <table id="listaCarrito">
+        <tr>
+          <th>Producto</th>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+        </tr>
+      </table>
+      <div class="botones">
+        <button id="btnComprar" class="btn">Carrito Comprar</button>
+        <button id="btnBorrarCarrito" class="btn">Borrar Carrito</button>
+      </div>
     </main>
   </body>
   <script
@@ -57,10 +60,14 @@
   <script src="./src/js/carrito.js"></script>
   <script src="./src/js/editar.js"></script>
   <script>
-      productos.forEach(producto => {
-          verProducto(producto, producto.verTarjeta())
-          agregarCarrito(producto.id)
-      })
+    productos.forEach((producto) => {
+      verProducto(producto, producto.verTarjeta());
+      agregarCarrito(producto.id);
+    });
+  </script>
+  <script>
+    verProductosCarrito();
+    borrarCarrito();
   </script>
   <footer></footer>
 </html>

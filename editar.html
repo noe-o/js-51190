@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crear productos</title>
+    <title>Editar productos</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -39,94 +39,48 @@
     </header>
     <main>
       <h2 class="category">Categorías</h2>
-      <div class="categorias">
-        <div>
-          <h3>Aceite de Oliva Virgen Extra (AOVE)</h3>
-          <form id="crearAceite" class="formulario">
-            <input
-              type="text"
-              name="nombre"
-              placeholder="Nombre del producto"
-              required
-            />
-            <input
-              type="text"
-              name="detalle"
-              placeholder="Descripción"
-              required
-            />
-            <input
-              type="text"
-              name="stock"
-              placeholder="Unidades en stock"
-              required
-            />
-            <input type="number" name="precio" placeholder="Precio" required />
-            <button class="btn btn-outline-success" type="submit">Crear</button>
-          </form>
-          <section id="aceite" class="aceite"></section>
-        </div>
-        <div>
-          <h3>Cosmética</h3>
-          <form id="crearCosmetica" class="formulario">
-            <input
-              type="text"
-              name="nombre"
-              placeholder="Nombre del producto"
-              required
-            />
-            <input
-              type="text"
-              name="detalle"
-              placeholder="Descripción"
-              required
-            />
-            <input
-              type="text"
-              name="stock"
-              placeholder="Unidades en stock"
-              required
-            />
-            <input type="number" name="precio" placeholder="Precio" required />
-            <button class="btn btn-outline-success" type="submit">Crear</button>
-          </form>
-          <section id="cosmetica" class="cosmetica"></section>
-        </div>
-        <div>
-          <h3>Aceituna sin carozo</h3>
-          <form id="crearAceituna" class="formulario">
-            <input
-              type="text"
-              name="nombre"
-              placeholder="Nombre del producto"
-              required
-            />
-            <input
-              type="text"
-              name="detalle"
-              placeholder="Descripción"
-              required
-            />
-            <input
-              type="text"
-              name="stock"
-              placeholder="Unidades en stock"
-              required
-            />
-            <input type="number" name="precio" placeholder="Precio" required />
-            <button class="btn btn-outline-success" type="submit">Crear</button>
-          </form>
-          <section id="aceituna" class="aceituna"></section>
-        </div>
-      </div>
+      <form id="crearProducto" class="formulario">
+        <textarea
+          type="text"
+          name="nombre"
+          minlength="15"
+          maxlength="50"
+          placeholder="Ingrese nombre de producto"
+          required
+        ></textarea>
+        <textarea
+          type="text"
+          name="detalle"
+          minlength="40"
+          maxlength="200"
+          placeholder="Ingrese una descripcion de producto"
+          required
+        ></textarea>
+        <input
+          type="text"
+          name="stock"
+          placeholder="Ingrese el stock"
+          required
+        />
+        <input
+          type="number"
+          name="precio"
+          placeholder="Ingrese Precio"
+          required
+        />
+        <button class="btn" type="submit">Crear Producto</button>
+      </form>
+      <section id="productos" class="productos"></section>
     </main>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/toastify-js"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/editarAceite.js"></script>
-    <script src="./js/editarCosmetica.js"></script>
-    <script src="./js/editarAceituna.js"></script>
+    <script src="./js/editar.js"></script>
+    <script>
+      verProductos();
+      crearProducto();
+    </script>
   </body>
 </html>

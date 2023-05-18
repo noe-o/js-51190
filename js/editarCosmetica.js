@@ -1,4 +1,4 @@
-class Cosmetica {
+/*class Cosmetica {
   constructor(id, nombre, detalle, precio, stock) {
     this.id = id;
     this.nombre = nombre;
@@ -119,3 +119,4 @@ const verCosmeticas = () => {
 };
 verCosmeticas();
 crearCosmetica();
+*/

@@ -1,4 +1,4 @@
-class Aceite {
+/*class Aceite {
   constructor(id, nombre, detalle, precio, stock) {
     this.id = id;
     this.nombre = nombre;
@@ -121,3 +121,4 @@ const verAceites = () => {
 };
 verAceites();
 crearAceite();
+*/

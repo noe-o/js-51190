@@ -1,4 +1,4 @@
-const aceites = JSON.parse(localStorage.getItem('aceites')) ?? [];
+/*const aceites = JSON.parse(localStorage.getItem('aceites')) ?? [];
 
 const ContenedorAceites = document.querySelector('#aceite');
 aceites.forEach((aceite) => {
@@ -38,4 +38,4 @@ aceitunas.forEach((aceituna) => {
         <span>${aceituna.precio} Pesos</span>
         <button class="btn btn-success">Comprar</button>`;
   ContenedorAceitunas.append(tarjetaAceitunas);
-});
+});*/

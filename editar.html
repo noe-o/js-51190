@@ -40,6 +40,11 @@
     <main>
       <h2 class="category">Categorías</h2>
       <form id="crearProducto" class="formulario">
+        <select name="categoria">
+          <option value="aceite">Aceite</option>
+          <option value="aceituna">Aceituna</option>
+          <option value="cosmetica">Cosmética</option>
+        </select>
         <textarea
           type="text"
           name="nombre"
@@ -66,7 +71,11 @@
         />
         <button class="btn btn-success" type="submit">Crear Producto</button>
       </form>
-      <section id="productos" class="productos"></section>
+      <section id="productos" class="productos">
+        <section id="aceite" class="aceite"></section>
+        <section id="aceituna" class="aceituna"></section>
+        <section id="cosmetica" class="cosmetica"></section>
+      </section>
     </main>
     <script
       type="text/javascript"

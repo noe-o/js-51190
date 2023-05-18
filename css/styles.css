@@ -46,8 +46,26 @@ main {
 .editar button {
   background-color: #a9f799;
 }
-#btnBorrar {
+
+.bg-verde{
   background-color: #a9f799;
+}
+
+#contenedorCarrito{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#listaCarrito{
+  width: 600px;
+  margin: 15px;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+#listaCarrito td, #listaCarrito th{
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
 }
 
 .navbar {

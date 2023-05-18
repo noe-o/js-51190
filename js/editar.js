@@ -15,7 +15,7 @@ class Producto {
           <input type="number" name="stock" value="${this.stock}">
           <button class="btn" type="submit">Editar</button>
       </form>
-      <button class="btn" id="btnBorrar${this.id}">Borrar</button>`;
+      <button class="btn bg-verde" id="btnBorrar${this.id}">Borrar</button>`;
   }
   verTarjeta() {
     return `

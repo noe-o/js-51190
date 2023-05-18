@@ -52,13 +52,7 @@ const mensaje = (mensaje) => {
     duration: 1000,
   }).showToast();
 };
-Swal.fire({
-  position: 'top-end',
-  icon: 'success',
-  title: 'El producto se creó con éxito',
-  showConfirmButton: false,
-  timer: 1500,
-});
+
 const borrarProducto = (id) => {
   const borrarProductoBtn = document.querySelector('#btnBorrar' + id);
   borrarProductoBtn.addEventListener('click', () => {
@@ -113,6 +107,13 @@ const crearProducto = () => {
     verProducto(producto, producto.verEditar());
     borrarProducto(producto.id);
     editarProducto(producto.id);
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'El producto se creó con éxito',
+      showConfirmButton: false,
+      timer: 1500,
+    });
   });
 };
 

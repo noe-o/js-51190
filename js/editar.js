@@ -128,3 +128,5 @@ const verProductos = () => {
     editarProducto(producto.id);
   });
 };
+verProductos();
+crearProducto();

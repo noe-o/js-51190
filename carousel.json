@@ -1,1 +1,14 @@
-[{}]
+[
+  {
+    "nombre": "Jabonera",
+    "detalle": "Jabonera artesanal, con madera del árbol de oliva",
+    "precio": 2000,
+    "stock": 10
+  },
+  {
+    "nombre": "Jabón",
+    "detalle": "Jabón artesanal hecho con aeite de oliva",
+    "precio": 700,
+    "stock": 20
+  }
+]

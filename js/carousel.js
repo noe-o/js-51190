@@ -1,6 +1,6 @@
 const verCarousel = async () => {
   try {
-    const res = await fetch('../carrousel.json');
+    const res = await fetch('../carousel.json');
     const items = await res.json();
     const carrousel = document.querySelector('#carousel');
     items.forEach((item) => {

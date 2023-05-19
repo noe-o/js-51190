@@ -30,7 +30,11 @@ const borrarCarrito = () => {
     localStorage.setItem('carrito', JSON.stringify([]));
     Swal.fire('El carrito está vacío');
   });
+  setTimeout(() => {
+    location.href = './index.html';
+  }, 2000);
 };
+
 const comprar = () => {
   const btnComprar = document.querySelector('#btnComprar');
   btnComprar.addEventListener('click', () => {

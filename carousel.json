@@ -11,4 +11,10 @@
     "precio": 700,
     "stock": 20
   }
+  {
+    "nombre": "AOVE 1lt",
+    "detalle": "Aceite de Oliva Virgen Extra. Cosecha 2023",
+    "precio": 2700,
+    "stock": 30
+  }
 ]

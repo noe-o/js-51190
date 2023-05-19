@@ -73,7 +73,6 @@ const editarProducto = (id) => {
     e.preventDefault();
     const datos = e.target.children;
     const index = productos.findIndex((producto) => producto.id == id);
-    productos[index].categoria = datos['categoria'].value;
     productos[index].nombre = datos['nombre'].value;
     productos[index].detalle = datos['detalle'].value;
     productos[index].precio = datos['precio'].value;

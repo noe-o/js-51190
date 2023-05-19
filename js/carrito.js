@@ -17,9 +17,9 @@ const agregarCarrito = (id) => {
     }
 
     localStorage.setItem('carrito', JSON.stringify(carrito));
-    mensaje('Se agrego un producto al carrito');
+    mensaje('Se agregó un producto al carrito');
     setTimeout(() => {
-      location.href = './pages/carrito.html';
+      location.href = '../carrito.html';
     }, 2000);
   });
 };
@@ -28,7 +28,7 @@ const borrarCarrito = () => {
   const btnBorrarCarrito = document.querySelector('#btnBorrarCarrito');
   btnBorrarCarrito.addEventListener('click', () => {
     localStorage.setItem('carrito', JSON.stringify([]));
-    mensaje('se borro el carrito');
+    mensaje('Se borró el carrito');
     setTimeout(() => {
       location.href = '../index.html';
     }, 2000);
@@ -44,7 +44,6 @@ const verProductoCarrito = (productoCarrito) => {
   if (producto != undefined) {
     const tdProducto = document.createElement('tr');
     tdProducto.innerHTML = `
-            <td><img src="../src/img/tv-with-wide-screen.jpg" alt=""></td>
             <td><h3>${producto.nombre}</h3></td>
             <td>${producto.precio} $</td>
             <td>${productoCarrito.cantidad}</td>

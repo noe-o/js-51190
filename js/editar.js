@@ -1,7 +1,6 @@
 class Producto {
-  constructor(id, categoria, nombre, detalle, stock, precio) {
+  constructor(id, nombre, detalle, stock, precio) {
     this.id = id;
-    this.categoria = categoria;
     this.nombre = nombre;
     this.detalle = detalle;
     this.stock = parseInt(stock);
@@ -10,11 +9,6 @@ class Producto {
   verEditar() {
     return `
       <form class="editar" id="editar${this.id}">
-          <select name="categoria">
-            <option value="aceite">Aceite</option>
-            <option value="aceituna">Aceituna</option>
-            <option value="cosmetica">Cosmética</option>
-          </select>
           <textarea type="text" name="nombre">${this.nombre}</textarea>
           <textarea type="text" name="detalle">${this.detalle}</textarea>
           <input type="number" name="precio" value="${this.precio}">
@@ -90,28 +84,12 @@ const editarProducto = (id) => {
   });
 };
 const verProducto = (producto, contenidoTarjeta) => {
-  if (categoria=="aceite"){
-  const contenedorProductos = document.querySelector('#aceite');
+  const contenedorProductos = document.querySelector('#productos');
   const tarjetaProducto = document.createElement('div');
-  tarjetaProducto.className = 'aceite';
+  tarjetaProducto.className = 'producto';
   tarjetaProducto.id = 'producto' + producto.id + producto.categoria;
   tarjetaProducto.innerHTML = contenidoTarjeta;
   contenedorProductos.append(tarjetaProducto);
-  }else if(categoria=="aceituna"){
-  const contenedorProductos = document.querySelector('#aceituna');
-  const tarjetaProducto = document.createElement('div');
-  tarjetaProducto.className = 'aceituna';
-  tarjetaProducto.id = 'producto' + producto.id + producto.categoria;
-  tarjetaProducto.innerHTML = contenidoTarjeta;
-  contenedorProductos.append(tarjetaProducto);
-  } else if(categoria=="cosmetica"){
-    const contenedorProductos = document.querySelector('#cosmetica');
-  const tarjetaProducto = document.createElement('div');
-  tarjetaProducto.className = 'cosmetica';
-  tarjetaProducto.id = 'producto' + producto.id + producto.categoria;
-  tarjetaProducto.innerHTML = contenidoTarjeta;
-  contenedorProductos.append(tarjetaProducto);
-  }
 };
 
 const crearProducto = () => {

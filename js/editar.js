@@ -38,7 +38,6 @@ productosLiterales.forEach((producto) => {
   productos.push(
     new Producto(
       producto.id,
-      producto.categoria,
       producto.nombre,
       producto.detalle,
       producto.stock,

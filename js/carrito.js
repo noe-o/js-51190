@@ -62,7 +62,7 @@ const verProductosCarrito = () => {
     const contenedorCarrito = document.querySelector('#contenedorCarrito');
     contenedorCarrito.innerHTML = '<h3>El carrito esta vacio</h3>';
     setTimeout(() => {
-      location.href = '../index.html';
+      location.href = './index.html';
     }, 2000);
   }
   carrito.forEach((producto) => {

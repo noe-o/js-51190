@@ -44,6 +44,7 @@ main {
 .editar {
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 .editar button {
   width: fit-content;

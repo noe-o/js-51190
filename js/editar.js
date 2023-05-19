@@ -8,14 +8,14 @@ class Producto {
   }
   verEditar() {
     return `
-      <form class="editar py-3 my-3" id="editar${this.id}">
+      <form class="editar" id="editar${this.id}">
           <textarea type="text" name="nombre">${this.nombre}</textarea>
           <textarea type="text" name="detalle">${this.detalle}</textarea>
           <input type="number" name="precio" value="${this.precio}">
           <input type="number" name="stock" value="${this.stock}">
           <button class="btn btn-outline-dark" type="submit">Editar</button>
       </form>
-      <button class="btn btn-outline-dark py-3 my-3" id="btnBorrar${this.id}">Borrar</button>`;
+      <button class="btn btn-outline-dark" id="btnBorrar${this.id}">Borrar</button>`;
   }
   verTarjeta() {
     return `
@@ -27,7 +27,7 @@ class Producto {
       <label>Cantidad deseada</label>
       <input type="number" min="1" max="${this.stock}" name="cantidad" value="1">
       <br/> 
-      <button type="submit" class="btn btn-outline-success">Carrito</button>
+      <button type="submit" class="btn btn-outline-success">Compar</button>
       </form>
       `;
   }

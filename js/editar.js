@@ -27,7 +27,7 @@ class Producto {
       <label>Cantidad deseada</label>
       <input type="number" min="1" max="${this.stock}" name="cantidad" value="1">
       <br/> 
-      <button type="submit" class="btn btn-outline-success">Compar</button>
+      <button type="submit" class="btn btn-outline-success">Comprar</button>
       </form>
       `;
   }

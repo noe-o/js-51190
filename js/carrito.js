@@ -28,11 +28,23 @@ const borrarCarrito = () => {
   const btnBorrarCarrito = document.querySelector('#btnBorrarCarrito');
   btnBorrarCarrito.addEventListener('click', () => {
     localStorage.setItem('carrito', JSON.stringify([]));
-    mensaje('Se borró el carrito');
-    setTimeout(() => {
-      location.href = './index.html';
-    }, 2000);
+    Swal.fire('El carrito está vacío');
   });
+};
+const comprar = () => {
+  const btnComprar = document.querySelector('#btnComprar');
+  btnComprar.addEventListener('click', () => {
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Gracias por su compra!',
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  });
+  setTimeout(() => {
+    location.href = './index.html';
+  }, 2000);
 };
 
 const verProductoCarrito = (productoCarrito) => {

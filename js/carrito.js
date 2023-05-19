@@ -19,7 +19,7 @@ const agregarCarrito = (id) => {
     localStorage.setItem('carrito', JSON.stringify(carrito));
     mensaje('Se agregó un producto al carrito');
     setTimeout(() => {
-      location.href = '../carrito.html';
+      location.href = './carrito.html';
     }, 2000);
   });
 };
@@ -30,7 +30,7 @@ const borrarCarrito = () => {
     localStorage.setItem('carrito', JSON.stringify([]));
     mensaje('Se borró el carrito');
     setTimeout(() => {
-      location.href = '../index.html';
+      location.href = './index.html';
     }, 2000);
   });
 };

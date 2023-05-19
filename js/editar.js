@@ -21,11 +21,12 @@ class Producto {
     return `
       <h3>${this.nombre}</h3>
       <p>${this.detalle}</p>
-      <span>Precio: ${this.precio} Pesos </span>
-      <span> Stock:${this.stock}</span>
+      <span>Precio: $${this.precio}</span>
+      <span> Stock:${this.stock} unidades</span>
       <form id="carrito${this.id}">
       <label>Cantidad deseada</label>
-      <input type="number" min="1" max="${this.stock}" name="cantidad" value="1"> 
+      <input type="number" min="1" max="${this.stock}" name="cantidad" value="1">
+      <br/> 
       <button type="submit" class="btn">Carrito</button>
       </form>
       `;

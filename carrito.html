@@ -37,23 +37,18 @@
       </nav>
     </header>
     <h1 id="title">FINCA OLIVA OLIVOS</h1>
-    <main>
-      <div id="contenedorProductos"></div>
-      <div id="contenedorCarrito">
-        <table id="listaCarrito">
-          <tr>
-            <th>Categoría</th>
-            <th>Producto</th>
-            <th>Nombre</th>
-            <th>Precio</th>
-            <th>Cantidad</th>
-          </tr>
-        </table>
-        <div>
-          <button id="btnComprar" class="btn btn-success">Comprar</button>
-          <button id="btnBorrarCarrito" class="btn btn-danger">Borrar</button>
-        </div>
-      </div>
+    <main id="contenedorCarrito">
+      <table id="listaCarrito">
+        <tr>
+          <th>Categoría</th>
+          <th>Producto</th>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+        </tr>
+      </table>
+      <button id="btnComprar" class="btn btn-success">Comprar</button>
+      <button id="btnBorrarCarrito" class="btn btn-danger">Borrar</button>
     </main>
   </body>
   <script
@@ -66,15 +61,11 @@
     src="https://cdn.jsdelivr.net/npm/toastify-js"
   ></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
   <script src="./js/carrito.js"></script>
   <script src="./js/editar.js"></script>
   <script>
-    productos.forEach((producto) => {
-      verProducto(producto, producto.verTarjeta());
-      agregarCarrito(producto.id);
-    });
+    verProductosCarrito();
+    borrarCarrito();
   </script>
-
   <footer></footer>
 </html>

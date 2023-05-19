@@ -47,10 +47,7 @@ main {
 .editar button {
   background-color: rgb(174, 174, 174);
   width: fit-content;
-}
-
-.bg-verde {
-  background-color: #a9f799;
+  margin: auto;
 }
 
 #contenedorCarrito {
@@ -99,7 +96,7 @@ main {
   background-color: #d8f799;
   margin: 10px auto;
 }
-#btnBorrar .btn {
+#btnBorrar button {
   background-color: rgb(174, 174, 174);
 }
 

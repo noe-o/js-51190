@@ -13,9 +13,9 @@ class Producto {
           <textarea type="text" name="detalle">${this.detalle}</textarea>
           <input type="number" name="precio" value="${this.precio}">
           <input type="number" name="stock" value="${this.stock}">
-          <button class="btn" type="submit">Editar</button>
+          <button class="btn btn-primary" type="submit">Editar</button>
       </form>
-      <button class="btn bg-verde" id="btnBorrar${this.id}">Borrar</button>`;
+      <button class="btn btn-danger" id="btnBorrar${this.id}">Borrar</button>`;
   }
   verTarjeta() {
     return `

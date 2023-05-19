@@ -46,7 +46,6 @@ main {
   flex-direction: column;
 }
 .editar button {
-  background-color: rgb(174, 174, 174);
   width: fit-content;
   margin: auto;
 }
@@ -96,9 +95,6 @@ main {
   max-width: 600px;
   background-color: #d8f799;
   margin: 10px auto;
-}
-#btnBorrar button {
-  background-color: rgb(174, 174, 174);
 }
 
 .editTittle {

@@ -51,8 +51,8 @@ const mensaje = (mensaje) => {
     text: mensaje,
     duration: 1000,
     style: {
-      background: #d8f799,
-  },
+      background: '#d8f799',
+    },
   }).showToast();
 };
 

@@ -5,5 +5,12 @@
     "detalle": "Aceite de Oliva Virgen Extra. Cosecha 2023",
     "stock": 30,
     "precio": 800
+  },
+  {
+    "id": 1,
+    "nombre": "AOVE 500cc",
+    "detalle": "Aceite de Oliva Virgen Extra. Cosecha 2023",
+    "stock": 30,
+    "precio": 1500
   }
 ]

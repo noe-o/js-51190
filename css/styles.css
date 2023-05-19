@@ -37,7 +37,8 @@ main {
   text-align: center;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 5px;
+  padding: 5px 10px;
+  margin: 5px 10px;
 }
 
 .editar {
